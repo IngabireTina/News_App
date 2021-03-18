@@ -12,6 +12,6 @@ class NewsSourceTest(unittest.TestCase):
         self.new_news = News_Source('a','b','www.d.com',"e")
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_news,News))
+        self.assertTrue(isinstance(self.new_news,News_Source))
 
 if __name__ == '__main__':
