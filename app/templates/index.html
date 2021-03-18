@@ -6,39 +6,45 @@
 {% block content %}
 <div class="jumbotron" style="margin-top: -1cm; background-image: url(../static/images/new.jpg);background-size: cover;">
     <div class="container p-5">
-        <h1 style="color: white;text-shadow: 1px solid gray;">Hello, Welcome to News-App</h1><br>
-        <p style="color: white;text-shadow: 1px solid gray;">Preview news articles from various sources</p><br>
+        <strong><h2 style="color: rgb(235, 235, 243);text-shadow: 1px solid white;">Welcome, Read your Favorite</h2></strong><br>
+        <p style="color: rgb(231, 231, 241);text-shadow: 1px solid white;">Preview news articles from various sources</p><br>
     </div>
 </div>
 <div class="container">
 
     <div class="card row m-1">
-        <h3>General News</h3>
+        <h3>GENERAL NEWS</h3>
         {{macro.displayNewsList(general)}}
     </div>
+
     <div class="card row m-1">
-        <h3>Business News</h3>
+        <h3>BUSINESS NEWS</h3>
         {{macro.displayNewsList(business)}}
     </div>
+    
     <div class="card row m-1">
-        <h3>Sports News</h3>
-        {{ macro.displayNewsList(sports) }}
-    </div>
-    <div class="card row m-1">
-        <h3>Health News</h3>
+        <h3>HEALTH NEWS</h3>
         {{ macro.displayNewsList(health) }}
     </div>
+
     <div class="card row m-1">
-        <h3>Entertainment News</h3>
+        <h3>SPORTS NEWS</h3>
+        {{ macro.displayNewsList(sports) }}
+    </div>
+
+    <div class="card row m-1">
+        <h3>ENTERTAINMENT NEWS</h3>
         {{ macro.displayNewsList(entertainment) }}
     </div>
+   
     <div class="card row m-1">
-        <h3>Science News</h3>
-        {{macro.displayNewsList(science)}}
-    </div>
-    <div class="card row m-1">
-        <h3>Technology News</h3>
+        <h3>TECHNOLOGY NEWS</h3>
         {{ macro.displayNewsList(technology) }}
+    </div>
+
+    <div class="card row m-1">
+        <h3>SCIENCE NEWS</h3>
+        {{macro.displayNewsList(science)}}
     </div>
 </div>
 
