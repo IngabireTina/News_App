@@ -14,4 +14,4 @@ class NewsSourceTest(unittest.TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.new_news,News_Source))
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
